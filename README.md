@@ -19,6 +19,7 @@ This repository explores different training strategies, currently focusing on st
 | `DQN_vec.py` | **Optimized training script** using 4 parallel environments (Vectorized) for faster learning. |
 | `test.py` | Script to load a trained model (`.pth`) and watch the agent play. |
 | `snake_model_best.pth` | The saved model weights of the best-performing agent. |
+| `assets/` | Folder containing graphs and demo gifs. |
 
 ---
 
@@ -65,3 +66,52 @@ To run this project, you need Python installed along with the following librarie
 
 ```bash
 pip install gymnasium pygame torch numpy matplotlib
+```
+
+---
+
+## 🚀 How to Run
+
+### 1. Training the Agent
+To start training the agent from scratch, run one of the DQN scripts.
+
+**Option A: Standard Training**
+```bash
+python DQN_Snake.py
+```
+
+**Option B: Vectorized Training (Recommended)**
+```bash
+python DQN_vec.py
+```
+*The training script will save the best model weights as `snake_model_best.pth` (or similar) in the root directory.*
+
+### 2. Testing the Agent
+To watch the AI play the game using the trained model:
+
+```bash
+python test.py
+```
+*Make sure you have a `.pth` model file in the directory before running the test.*
+
+---
+
+## 🧠 Algorithm Details
+This project uses **Deep Q-Learning (DQN)**, a reinforcement learning technique where a neural network learns to approximate the Q-value function (predicting the expected future reward of an action).
+
+- **State Space**: 
+    - Relative position of food (x, y).
+    - Relative position of the snake head.
+    - Presence of danger (walls/body) in immediate vicinity.
+- **Action Space**: 
+    - [Up, Down, Left, Right]
+- **Reward System**: 
+    - **+10**: Eating food.
+    - **-10**: Collision (Game Over).
+    - **Tiny penalty**: To encourage taking the shortest path.
+
+## 🤝 Contributing
+Contributions are welcome! If you are interested in implementing the **Vision Mode (CNN)** or new RL algorithms, feel free to fork the repo and submit a Pull Request.
+
+## 📜 License
+This project is open-source and available for educational purposes.
