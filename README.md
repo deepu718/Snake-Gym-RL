@@ -56,7 +56,6 @@ We are actively experimenting with different architectures and inputs. The goal 
 - [x] **Vectorized Environments**: Implementation of parallel training for speed.
 - [ ] **Vision Mode (CNN)**: Change input from coordinates to raw RGB pixel frames. Use a Convolutional Neural Network (CNN) to "see" the board like a human.
 - [ ] **PPO / A2C**: Implement Policy Gradient methods to compare stability against DQN.
-- [ ] **Curriculum Learning**: Add obstacles or increase speed dynamically as the agent improves.
 
 ---
 
@@ -115,4 +114,5 @@ Contributions are welcome! If you are interested in implementing the **Vision Mo
 
 ## 📜 License
 This project is open-source and available for educational purposes.
+
 
