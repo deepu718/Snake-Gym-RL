@@ -2,7 +2,7 @@ __pycache__/
 *.pyc
 
 video_output/
-
+model/
 
 .env
 venv/
