@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+video_output/
+
+
+.env
+venv/
