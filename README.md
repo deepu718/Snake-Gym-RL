@@ -104,7 +104,7 @@ This project uses **Deep Q-Learning (DQN)**, a reinforcement learning technique 
     - Relative position of the snake head.
     - Presence of danger (walls/body) in immediate vicinity.
 - **Action Space**: 
-    - [Up, Down, Left, Right]
+    - [Straight, Left, Right]
 - **Reward System**: 
     - **+10**: Eating food.
     - **-10**: Collision (Game Over).
@@ -115,3 +115,4 @@ Contributions are welcome! If you are interested in implementing the **Vision Mo
 
 ## 📜 License
 This project is open-source and available for educational purposes.
+
